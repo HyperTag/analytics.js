@@ -7064,10 +7064,11 @@ module.exports = {
 'use strict';
 
 module.exports = exports = {
-  'astronomer': require('analytics.js-integration-astronomer')
+  'astronomer': require('analytics.js-integration-astronomer'),
+  'segment': require('analytics.js-integration-segmentio')
 };
 
-}, {"analytics.js-integration-astronomer":79}],
+}, {"analytics.js-integration-astronomer":79,"analytics.js-integration-segmentio":80}],
 79: [function(require, module, exports) {
 /* global analytics */
 /* eslint no-console:0, no-unused-vars:0, no-extra-parens:0 */
@@ -7284,8 +7285,8 @@ Astronomer.prototype.normalize = function(msg) {
   return msg;
 };
 
-}, {"analytics.js-integration":80,"visionmedia/superagent":81,"johntron/superagent-prefix":82,"caolan/async":83,"uuid":78}],
-80: [function(require, module, exports) {
+}, {"analytics.js-integration":81,"visionmedia/superagent":82,"johntron/superagent-prefix":83,"caolan/async":84,"uuid":78}],
+81: [function(require, module, exports) {
 
 /**
  * Module dependencies.
@@ -7349,8 +7350,8 @@ function createIntegration(name){
 
 module.exports = createIntegration;
 
-}, {"bind":84,"clone":13,"debug":85,"defaults":16,"extend":86,"slug":87,"./protos":88,"./statics":89}],
-84: [function(require, module, exports) {
+}, {"bind":85,"clone":13,"debug":86,"defaults":16,"extend":87,"slug":88,"./protos":89,"./statics":90}],
+85: [function(require, module, exports) {
 
 var bind = require('bind')
   , bindAll = require('bind-all');
@@ -7392,15 +7393,15 @@ function bindMethods (obj, methods) {
   return obj;
 }
 }, {"bind":55,"bind-all":56}],
-85: [function(require, module, exports) {
+86: [function(require, module, exports) {
 if ('undefined' == typeof window) {
   module.exports = require('./lib/debug');
 } else {
   module.exports = require('./debug');
 }
 
-}, {"./lib/debug":90,"./debug":91}],
-90: [function(require, module, exports) {
+}, {"./lib/debug":91,"./debug":92}],
+91: [function(require, module, exports) {
 /**
  * Module dependencies.
  */
@@ -7550,7 +7551,7 @@ function coerce(val) {
 }
 
 }, {}],
-91: [function(require, module, exports) {
+92: [function(require, module, exports) {
 
 /**
  * Expose `debug()` as the module.
@@ -7690,7 +7691,7 @@ try {
 } catch(e){}
 
 }, {}],
-86: [function(require, module, exports) {
+87: [function(require, module, exports) {
 
 module.exports = function extend (object) {
     // Takes an unlimited number of extenders.
@@ -7707,7 +7708,7 @@ module.exports = function extend (object) {
     return object;
 };
 }, {}],
-87: [function(require, module, exports) {
+88: [function(require, module, exports) {
 
 /**
  * Generate a slug from the given `str`.
@@ -7733,7 +7734,7 @@ module.exports = function (str, options) {
 };
 
 }, {}],
-88: [function(require, module, exports) {
+89: [function(require, module, exports) {
 /* global setInterval:true setTimeout:true */
 
 /**
@@ -8220,8 +8221,8 @@ function render(template, locals){
   }, {}, template.attrs);
 }
 
-}, {"emitter":8,"after":10,"each":92,"analytics-events":93,"fmt":94,"foldl":95,"load-iframe":96,"load-script":97,"to-no-case":98,"next-tick":57,"every":99,"is":100}],
-92: [function(require, module, exports) {
+}, {"emitter":8,"after":10,"each":93,"analytics-events":94,"fmt":95,"foldl":96,"load-iframe":97,"load-script":98,"to-no-case":99,"next-tick":57,"every":100,"is":101}],
+93: [function(require, module, exports) {
 
 /**
  * Module dependencies.
@@ -8312,8 +8313,8 @@ function array(obj, fn, ctx) {
   }
 }
 
-}, {"type":101,"component-type":101,"to-function":74}],
-101: [function(require, module, exports) {
+}, {"type":102,"component-type":102,"to-function":74}],
+102: [function(require, module, exports) {
 
 /**
  * toString ref.
@@ -8348,7 +8349,7 @@ module.exports = function(val){
 };
 
 }, {}],
-93: [function(require, module, exports) {
+94: [function(require, module, exports) {
 
 module.exports = {
   removedProduct: /^[ _]?removed[ _]?product[ _]?$/i,
@@ -8368,7 +8369,7 @@ module.exports = {
 };
 
 }, {}],
-94: [function(require, module, exports) {
+95: [function(require, module, exports) {
 
 /**
  * toString.
@@ -8413,7 +8414,7 @@ function fmt(str){
 }
 
 }, {}],
-95: [function(require, module, exports) {
+96: [function(require, module, exports) {
 'use strict';
 
 /**
@@ -8472,7 +8473,7 @@ var foldl = function foldl(iterator, accumulator, collection) {
 module.exports = foldl;
 
 }, {"each":72}],
-96: [function(require, module, exports) {
+97: [function(require, module, exports) {
 
 /**
  * Module dependencies.
@@ -8534,8 +8535,8 @@ module.exports = function loadIframe(options, fn){
   // give it an ID or attributes.
   return iframe;
 };
-}, {"script-onload":102,"next-tick":57,"type":47}],
-102: [function(require, module, exports) {
+}, {"script-onload":103,"next-tick":57,"type":47}],
+103: [function(require, module, exports) {
 
 // https://github.com/thirdpartyjs/thirdpartyjs-code/blob/master/examples/templates/02/loading-files/index.html
 
@@ -8591,7 +8592,7 @@ function attach(el, fn){
 }
 
 }, {}],
-97: [function(require, module, exports) {
+98: [function(require, module, exports) {
 
 /**
  * Module dependencies.
@@ -8652,8 +8653,8 @@ module.exports = function loadScript(options, fn){
   // give it an ID or attributes.
   return script;
 };
-}, {"script-onload":102,"next-tick":57,"type":47}],
-98: [function(require, module, exports) {
+}, {"script-onload":103,"next-tick":57,"type":47}],
+99: [function(require, module, exports) {
 
 /**
  * Expose `toNoCase`.
@@ -8726,7 +8727,7 @@ function uncamelize (string) {
   });
 }
 }, {}],
-99: [function(require, module, exports) {
+100: [function(require, module, exports) {
 'use strict';
 
 /**
@@ -8779,7 +8780,7 @@ var every = function every(predicate, collection) {
 module.exports = every;
 
 }, {"each":72}],
-100: [function(require, module, exports) {
+101: [function(require, module, exports) {
 
 var isEmpty = require('is-empty');
 
@@ -8856,7 +8857,7 @@ function generate (type) {
   };
 }
 }, {"is-empty":46,"type":47,"component-type":47}],
-89: [function(require, module, exports) {
+90: [function(require, module, exports) {
 
 /**
  * Module dependencies.
@@ -9020,8 +9021,8 @@ function objectify(str) {
   };
 }
 
-}, {"emitter":8,"domify":103,"each":92,"includes":70}],
-103: [function(require, module, exports) {
+}, {"emitter":8,"domify":104,"each":93,"includes":70}],
+104: [function(require, module, exports) {
 
 /**
  * Expose `parse`.
@@ -9132,7 +9133,7 @@ function parse(html, doc) {
 }
 
 }, {}],
-81: [function(require, module, exports) {
+82: [function(require, module, exports) {
 /**
  * Module dependencies.
  */
@@ -10272,8 +10273,8 @@ request.put = function(url, data, fn){
 
 module.exports = request;
 
-}, {"emitter":104,"reduce":105}],
-104: [function(require, module, exports) {
+}, {"emitter":105,"reduce":106}],
+105: [function(require, module, exports) {
 
 /**
  * Expose `Emitter`.
@@ -10437,7 +10438,7 @@ Emitter.prototype.hasListeners = function(event){
 };
 
 }, {}],
-105: [function(require, module, exports) {
+106: [function(require, module, exports) {
 
 /**
  * Reduce `arr` with `fn`.
@@ -10463,7 +10464,7 @@ module.exports = function(arr, fn, initial){
   return curr;
 };
 }, {}],
-82: [function(require, module, exports) {
+83: [function(require, module, exports) {
 module.exports = function (prefix) {
     return function (request) {
         if (request.url[0] === '/') {
@@ -10474,7 +10475,7 @@ module.exports = function (prefix) {
     };
 }
 }, {}],
-83: [function(require, module, exports) {
+84: [function(require, module, exports) {
 /*!
  * async
  * https://github.com/caolan/async
@@ -11699,6 +11700,1544 @@ module.exports = function (prefix) {
 }());
 
 }, {}],
+80: [function(require, module, exports) {
+
+/**
+ * Module dependencies.
+ */
+
+var ads = require('ad-params');
+var clone = require('clone');
+var cookie = require('cookie');
+var extend = require('extend');
+var integration = require('analytics.js-integration');
+var json = require('segmentio/json@1.0.0');
+var localstorage = require('store');
+var protocol = require('protocol');
+var send = require('send-json');
+var topDomain = require('top-domain');
+var utm = require('utm-params');
+var uuid = require('uuid');
+
+/**
+ * Cookie options
+ */
+
+var cookieOptions = {
+  // 1 year
+  maxage: 31536000000,
+  secure: false,
+  path: '/'
+};
+
+/**
+ * Expose `Segment` integration.
+ */
+
+var Segment = exports = module.exports = integration('Segment.io')
+  .option('apiKey', '');
+
+/**
+ * Get the store.
+ *
+ * @return {Function}
+ */
+
+exports.storage = function() {
+  return protocol() === 'file:' || protocol() === 'chrome-extension:' ? localstorage : cookie;
+};
+
+/**
+ * Expose global for testing.
+ */
+
+exports.global = window;
+
+/**
+ * Initialize.
+ *
+ * https://github.com/segmentio/segmentio/blob/master/modules/segmentjs/segment.js/v1/segment.js
+ *
+ * @api public
+ */
+
+Segment.prototype.initialize = function() {
+  var self = this;
+  this.ready();
+  this.analytics.on('invoke', function(msg) {
+    var action = msg.action();
+    var listener = 'on' + msg.action();
+    self.debug('%s %o', action, msg);
+    if (self[listener]) self[listener](msg);
+    self.ready();
+  });
+};
+
+/**
+ * Loaded.
+ *
+ * @api private
+ * @return {boolean}
+ */
+
+Segment.prototype.loaded = function() {
+  return true;
+};
+
+/**
+ * Page.
+ *
+ * @api public
+ * @param {Page} page
+ */
+
+Segment.prototype.onpage = function(page) {
+  this.send('/p', page.json());
+};
+
+/**
+ * Identify.
+ *
+ * @api public
+ * @param {Identify} identify
+ */
+
+Segment.prototype.onidentify = function(identify) {
+  this.send('/i', identify.json());
+};
+
+/**
+ * Group.
+ *
+ * @api public
+ * @param {Group} group
+ */
+
+Segment.prototype.ongroup = function(group) {
+  this.send('/g', group.json());
+};
+
+/**
+ * ontrack.
+ *
+ * TODO: Document this.
+ *
+ * @api private
+ * @param {Track} track
+ */
+
+Segment.prototype.ontrack = function(track) {
+  var json = track.json();
+  // TODO: figure out why we need traits.
+  delete json.traits;
+  this.send('/t', json);
+};
+
+/**
+ * Alias.
+ *
+ * @api public
+ * @param {Alias} alias
+ */
+
+Segment.prototype.onalias = function(alias) {
+  var json = alias.json();
+  var user = this.analytics.user();
+  json.previousId = json.previousId || json.from || user.id() || user.anonymousId();
+  json.userId = json.userId || json.to;
+  delete json.from;
+  delete json.to;
+  this.send('/a', json);
+};
+
+/**
+ * Normalize the given `msg`.
+ *
+ * @api private
+ * @param {Object} msg
+ */
+
+Segment.prototype.normalize = function(msg) {
+  this.debug('normalize %o', msg);
+  var user = this.analytics.user();
+  var global = exports.global;
+  var query = global.location.search;
+  var ctx = msg.context = msg.context || msg.options || {};
+  delete msg.options;
+  msg.writeKey = this.options.apiKey;
+  ctx.userAgent = navigator.userAgent;
+  if (!ctx.library) ctx.library = { name: 'analytics.js', version: this.analytics.VERSION };
+  if (query) ctx.campaign = utm(query);
+  this.referrerId(query, ctx);
+  msg.userId = msg.userId || user.id();
+  msg.anonymousId = user.anonymousId();
+  msg.messageId = uuid();
+  msg.sentAt = new Date();
+  this.debug('normalized %o', msg);
+  return msg;
+};
+
+/**
+ * Send `obj` to `path`.
+ *
+ * @api private
+ * @param {string} path
+ * @param {Object} obj
+ * @param {Function} fn
+ */
+
+Segment.prototype.send = function(path, msg, fn) {
+  var url = scheme() + '//api.segment.io/v1' + path;
+  var headers = { 'Content-Type': 'text/plain' };
+  fn = fn || noop;
+  var self = this;
+
+  // msg
+  msg = this.normalize(msg);
+
+  // send
+  send(url, msg, headers, function(err, res) {
+    self.debug('sent %O, received %O', msg, arguments);
+    if (err) return fn(err);
+    res.url = url;
+    fn(null, res);
+  });
+};
+
+/**
+ * Gets/sets cookies on the appropriate domain.
+ *
+ * @api private
+ * @param {string} name
+ * @param {*} val
+ */
+
+Segment.prototype.cookie = function(name, val) {
+  var store = Segment.storage();
+  if (arguments.length === 1) return store(name);
+  var global = exports.global;
+  var href = global.location.href;
+  var domain = '.' + topDomain(href);
+  if (domain === '.') domain = '';
+  this.debug('store domain %s -> %s', href, domain);
+  var opts = clone(cookieOptions);
+  opts.domain = domain;
+  this.debug('store %s, %s, %o', name, val, opts);
+  store(name, val, opts);
+  if (store(name)) return;
+  delete opts.domain;
+  this.debug('fallback store %s, %s, %o', name, val, opts);
+  store(name, val, opts);
+};
+
+/**
+ * Add referrerId to context.
+ *
+ * TODO: remove.
+ *
+ * @api private
+ * @param {Object} query
+ * @param {Object} ctx
+ */
+
+Segment.prototype.referrerId = function(query, ctx) {
+  var stored = this.cookie('s:context.referrer');
+  var ad;
+
+  if (stored) stored = json.parse(stored);
+  if (query) ad = ads(query);
+
+  ad = ad || stored;
+
+  if (!ad) return;
+  ctx.referrer = extend(ctx.referrer || {}, ad);
+  this.cookie('s:context.referrer', json.stringify(ad));
+};
+
+/**
+ * Get the scheme.
+ *
+ * The function returns `http:`
+ * if the protocol is `http:` and
+ * `https:` for other protocols.
+ *
+ * @api private
+ * @return {string}
+ */
+
+function scheme() {
+  return protocol() === 'http:' ? 'http:' : 'https:';
+}
+
+/**
+ * Noop.
+ */
+
+function noop() {}
+
+}, {"ad-params":107,"clone":13,"cookie":58,"extend":68,"analytics.js-integration":108,"segmentio/json@1.0.0":59,"store":109,"protocol":110,"send-json":111,"top-domain":112,"utm-params":113,"uuid":78}],
+107: [function(require, module, exports) {
+/**
+ * Module dependencies.
+ */
+ 
+var parse = require('querystring').parse;
+ 
+/**
+ * Expose `ads`
+ */
+ 
+module.exports = ads;
+ 
+/**
+ * All the ad query params we look for.
+ */
+ 
+var QUERYIDS = {
+  'btid' : 'dataxu',
+  'urid' : 'millennial-media'
+};
+ 
+/**
+ * Get all ads info from the given `querystring`
+ *
+ * @param {String} query
+ * @return {Object}
+ * @api private
+ */
+ 
+function ads(query){
+  var params = parse(query);
+  for (var key in params) {
+    for (var id in QUERYIDS) {
+      if (key === id) {
+        return {
+          id : params[key],
+          type : QUERYIDS[id]
+        };
+      }
+    }
+  }
+}
+}, {"querystring":27}],
+108: [function(require, module, exports) {
+
+/**
+ * Module dependencies.
+ */
+
+var bind = require('bind');
+var clone = require('clone');
+var debug = require('debug');
+var defaults = require('defaults');
+var extend = require('extend');
+var slug = require('slug');
+var protos = require('./protos');
+var statics = require('./statics');
+
+/**
+ * Create a new `Integration` constructor.
+ *
+ * @constructs Integration
+ * @param {string} name
+ * @return {Function} Integration
+ */
+
+function createIntegration(name){
+  /**
+   * Initialize a new `Integration`.
+   *
+   * @class
+   * @param {Object} options
+   */
+
+  function Integration(options){
+    if (options && options.addIntegration) {
+      // plugin
+      return options.addIntegration(Integration);
+    }
+    this.debug = debug('analytics:integration:' + slug(name));
+    this.options = defaults(clone(options) || {}, this.defaults);
+    this._queue = [];
+    this.once('ready', bind(this, this.flush));
+
+    Integration.emit('construct', this);
+    this.ready = bind(this, this.ready);
+    this._wrapInitialize();
+    this._wrapPage();
+    this._wrapTrack();
+  }
+
+  Integration.prototype.defaults = {};
+  Integration.prototype.globals = [];
+  Integration.prototype.templates = {};
+  Integration.prototype.name = name;
+  extend(Integration, statics);
+  extend(Integration.prototype, protos);
+
+  return Integration;
+}
+
+/**
+ * Exports.
+ */
+
+module.exports = createIntegration;
+
+}, {"bind":85,"clone":13,"debug":86,"defaults":16,"extend":87,"slug":88,"./protos":114,"./statics":115}],
+114: [function(require, module, exports) {
+/* global setInterval:true setTimeout:true */
+
+/**
+ * Module dependencies.
+ */
+
+var Emitter = require('emitter');
+var after = require('after');
+var each = require('each');
+var events = require('analytics-events');
+var fmt = require('fmt');
+var foldl = require('foldl');
+var loadIframe = require('load-iframe');
+var loadScript = require('load-script');
+var normalize = require('to-no-case');
+var nextTick = require('next-tick');
+var type = require('type');
+
+/**
+ * Noop.
+ */
+
+function noop(){}
+
+/**
+ * hasOwnProperty reference.
+ */
+
+var has = Object.prototype.hasOwnProperty;
+
+/**
+ * Window defaults.
+ */
+
+var onerror = window.onerror;
+var onload = null;
+var setInterval = window.setInterval;
+var setTimeout = window.setTimeout;
+
+/**
+ * Mixin emitter.
+ */
+
+/* eslint-disable new-cap */
+Emitter(exports);
+/* eslint-enable new-cap */
+
+/**
+ * Initialize.
+ */
+
+exports.initialize = function(){
+  var ready = this.ready;
+  nextTick(ready);
+};
+
+/**
+ * Loaded?
+ *
+ * @api private
+ * @return {boolean}
+ */
+
+exports.loaded = function(){
+  return false;
+};
+
+/**
+ * Page.
+ *
+ * @api public
+ * @param {Page} page
+ */
+
+/* eslint-disable no-unused-vars */
+exports.page = function(page){};
+/* eslint-enable no-unused-vars */
+
+/**
+ * Track.
+ *
+ * @api public
+ * @param {Track} track
+ */
+
+/* eslint-disable no-unused-vars */
+exports.track = function(track){};
+/* eslint-enable no-unused-vars */
+
+/**
+ * Get events that match `event`.
+ *
+ * @api public
+ * @param {Object|Object[]} events An object or array of objects pulled from
+ * settings.mapping.
+ * @param {string} event The name of the event whose metdata we're looking for.
+ * @return {Array} An array of settings that match the input `event` name.
+ * @example
+ * var events = { my_event: 'a4991b88' };
+ * .map(events, 'My Event');
+ * // => ["a4991b88"]
+ * .map(events, 'whatever');
+ * // => []
+ *
+ * var events = [{ key: 'my event', value: '9b5eb1fa' }];
+ * .map(events, 'my_event');
+ * // => ["9b5eb1fa"]
+ * .map(events, 'whatever');
+ * // => []
+ */
+
+exports.map = function(events, event){
+  var normalizedEvent = normalize(event);
+
+  return foldl(function(matchingEvents, val, key, events) {
+    // If true, this is a `mixed` value, which is structured like so:
+    //     { key: 'testEvent', value: { event: 'testEvent', someValue: 'xyz' } }
+    // We need to extract the key, which we use to match against
+    // `normalizedEvent`, and return `value` as part of `matchingEvents` if that
+    // match succeds.
+    if (type(events) === 'array') {
+      // If there's no key attached to this event mapping (unusual), skip this
+      // item.
+      if (!val.key) return matchingEvents;
+      // Extract the key and value from the `mixed` object.
+      key = val.key;
+      val = val.value;
+    }
+
+    if (normalize(key) === normalizedEvent) {
+      matchingEvents.push(val);
+    }
+
+    return matchingEvents;
+  }, [], events);
+};
+
+/**
+ * Invoke a `method` that may or may not exist on the prototype with `args`,
+ * queueing or not depending on whether the integration is "ready". Don't
+ * trust the method call, since it contains integration party code.
+ *
+ * @api private
+ * @param {string} method
+ * @param {...*} args
+ */
+
+exports.invoke = function(method){
+  if (!this[method]) return;
+  var args = Array.prototype.slice.call(arguments, 1);
+  if (!this._ready) return this.queue(method, args);
+  var ret;
+
+  try {
+    this.debug('%s with %o', method, args);
+    ret = this[method].apply(this, args);
+  } catch (e) {
+    this.debug('error %o calling %s with %o', e, method, args);
+  }
+
+  return ret;
+};
+
+/**
+ * Queue a `method` with `args`. If the integration assumes an initial
+ * pageview, then let the first call to `page` pass through.
+ *
+ * @api private
+ * @param {string} method
+ * @param {Array} args
+ */
+
+exports.queue = function(method, args){
+  if (method === 'page' && this._assumesPageview && !this._initialized) {
+    return this.page.apply(this, args);
+  }
+
+  this._queue.push({ method: method, args: args });
+};
+
+/**
+ * Flush the internal queue.
+ *
+ * @api private
+ */
+
+exports.flush = function(){
+  this._ready = true;
+  var self = this;
+
+  each(this._queue, function(call){
+    self[call.method].apply(self, call.args);
+  });
+
+  // Empty the queue.
+  this._queue.length = 0;
+};
+
+/**
+ * Reset the integration, removing its global variables.
+ *
+ * @api private
+ */
+
+exports.reset = function(){
+  for (var i = 0; i < this.globals.length; i++) {
+    window[this.globals[i]] = undefined;
+  }
+
+  window.setTimeout = setTimeout;
+  window.setInterval = setInterval;
+  window.onerror = onerror;
+  window.onload = onload;
+};
+
+/**
+ * Load a tag by `name`.
+ *
+ * @param {string} name The name of the tag.
+ * @param {Object} locals Locals used to populate the tag's template variables
+ * (e.g. `userId` in '<img src="https://whatever.com/{{ userId }}">').
+ * @param {Function} [callback=noop] A callback, invoked when the tag finishes
+ * loading.
+ */
+
+exports.load = function(name, locals, callback){
+  // Argument shuffling
+  if (typeof name === 'function') { callback = name; locals = null; name = null; }
+  if (name && typeof name === 'object') { callback = locals; locals = name; name = null; }
+  if (typeof locals === 'function') { callback = locals; locals = null; }
+
+  // Default arguments
+  name = name || 'library';
+  locals = locals || {};
+
+  locals = this.locals(locals);
+  var template = this.templates[name];
+  if (!template) throw new Error(fmt('template "%s" not defined.', name));
+  var attrs = render(template, locals);
+  callback = callback || noop;
+  var self = this;
+  var el;
+
+  switch (template.type) {
+    case 'img':
+      attrs.width = 1;
+      attrs.height = 1;
+      el = loadImage(attrs, callback);
+      break;
+    case 'script':
+      el = loadScript(attrs, function(err){
+        if (!err) return callback();
+        self.debug('error loading "%s" error="%s"', self.name, err);
+      });
+      // TODO: hack until refactoring load-script
+      delete attrs.src;
+      each(attrs, function(key, val){
+        el.setAttribute(key, val);
+      });
+      break;
+    case 'iframe':
+      el = loadIframe(attrs, callback);
+      break;
+    default:
+      // No default case
+  }
+
+  return el;
+};
+
+/**
+ * Locals for tag templates.
+ *
+ * By default it includes a cache buster and all of the options.
+ *
+ * @param {Object} [locals]
+ * @return {Object}
+ */
+
+exports.locals = function(locals){
+  locals = locals || {};
+  var cache = Math.floor(new Date().getTime() / 3600000);
+  if (!locals.hasOwnProperty('cache')) locals.cache = cache;
+  each(this.options, function(key, val){
+    if (!locals.hasOwnProperty(key)) locals[key] = val;
+  });
+  return locals;
+};
+
+/**
+ * Simple way to emit ready.
+ *
+ * @api public
+ */
+
+exports.ready = function(){
+  this.emit('ready');
+};
+
+/**
+ * Wrap the initialize method in an exists check, so we don't have to do it for
+ * every single integration.
+ *
+ * @api private
+ */
+
+exports._wrapInitialize = function(){
+  var initialize = this.initialize;
+  this.initialize = function(){
+    this.debug('initialize');
+    this._initialized = true;
+    var ret = initialize.apply(this, arguments);
+    this.emit('initialize');
+    return ret;
+  };
+
+  if (this._assumesPageview) this.initialize = after(2, this.initialize);
+};
+
+/**
+ * Wrap the page method to call `initialize` instead if the integration assumes
+ * a pageview.
+ *
+ * @api private
+ */
+
+exports._wrapPage = function(){
+  var page = this.page;
+  this.page = function(){
+    if (this._assumesPageview && !this._initialized) {
+      return this.initialize.apply(this, arguments);
+    }
+
+    return page.apply(this, arguments);
+  };
+};
+
+/**
+ * Wrap the track method to call other ecommerce methods if available depending
+ * on the `track.event()`.
+ *
+ * @api private
+ */
+
+exports._wrapTrack = function(){
+  var t = this.track;
+  this.track = function(track){
+    var event = track.event();
+    var called;
+    var ret;
+
+    for (var method in events) {
+      if (has.call(events, method)) {
+        var regexp = events[method];
+        if (!this[method]) continue;
+        if (!regexp.test(event)) continue;
+        ret = this[method].apply(this, arguments);
+        called = true;
+        break;
+      }
+    }
+
+    if (!called) ret = t.apply(this, arguments);
+    return ret;
+  };
+};
+
+/**
+ * TODO: Document me
+ *
+ * @api private
+ * @param {Object} attrs
+ * @param {Function} fn
+ * @return {undefined}
+ */
+
+function loadImage(attrs, fn){
+  fn = fn || function(){};
+  var img = new Image();
+  img.onerror = error(fn, 'failed to load pixel', img);
+  img.onload = function(){ fn(); };
+  img.src = attrs.src;
+  img.width = 1;
+  img.height = 1;
+  return img;
+}
+
+/**
+ * TODO: Document me
+ *
+ * @api private
+ * @param {Function} fn
+ * @param {string} message
+ * @param {Element} img
+ * @return {Function}
+ */
+
+function error(fn, message, img){
+  return function(e){
+    e = e || window.event;
+    var err = new Error(message);
+    err.event = e;
+    err.source = img;
+    fn(err);
+  };
+}
+
+/**
+ * Render template + locals into an `attrs` object.
+ *
+ * @api private
+ * @param {Object} template
+ * @param {Object} locals
+ * @return {Object}
+ */
+
+function render(template, locals){
+  return foldl(function(attrs, val, key) {
+    attrs[key] = val.replace(/\{\{\ *(\w+)\ *\}\}/g, function(_, $1){
+      return locals[$1];
+    });
+    return attrs;
+  }, {}, template.attrs);
+}
+
+}, {"emitter":8,"after":10,"each":93,"analytics-events":94,"fmt":95,"foldl":96,"load-iframe":97,"load-script":98,"to-no-case":99,"next-tick":57,"type":102}],
+115: [function(require, module, exports) {
+
+/**
+ * Module dependencies.
+ */
+
+var Emitter = require('emitter');
+var domify = require('domify');
+var each = require('each');
+var includes = require('includes');
+
+/**
+ * Mix in emitter.
+ */
+
+/* eslint-disable new-cap */
+Emitter(exports);
+/* eslint-enable new-cap */
+
+/**
+ * Add a new option to the integration by `key` with default `value`.
+ *
+ * @api public
+ * @param {string} key
+ * @param {*} value
+ * @return {Integration}
+ */
+
+exports.option = function(key, value){
+  this.prototype.defaults[key] = value;
+  return this;
+};
+
+/**
+ * Add a new mapping option.
+ *
+ * This will create a method `name` that will return a mapping for you to use.
+ *
+ * @api public
+ * @param {string} name
+ * @return {Integration}
+ * @example
+ * Integration('My Integration')
+ *   .mapping('events');
+ *
+ * new MyIntegration().track('My Event');
+ *
+ * .track = function(track){
+ *   var events = this.events(track.event());
+ *   each(events, send);
+ *  };
+ */
+
+exports.mapping = function(name){
+  this.option(name, []);
+  this.prototype[name] = function(str){
+    return this.map(this.options[name], str);
+  };
+  return this;
+};
+
+/**
+ * Register a new global variable `key` owned by the integration, which will be
+ * used to test whether the integration is already on the page.
+ *
+ * @api public
+ * @param {string} key
+ * @return {Integration}
+ */
+
+exports.global = function(key){
+  this.prototype.globals.push(key);
+  return this;
+};
+
+/**
+ * Mark the integration as assuming an initial pageview, so to defer loading
+ * the script until the first `page` call, noop the first `initialize`.
+ *
+ * @api public
+ * @return {Integration}
+ */
+
+exports.assumesPageview = function(){
+  this.prototype._assumesPageview = true;
+  return this;
+};
+
+/**
+ * Mark the integration as being "ready" once `load` is called.
+ *
+ * @api public
+ * @return {Integration}
+ */
+
+exports.readyOnLoad = function(){
+  this.prototype._readyOnLoad = true;
+  return this;
+};
+
+/**
+ * Mark the integration as being "ready" once `initialize` is called.
+ *
+ * @api public
+ * @return {Integration}
+ */
+
+exports.readyOnInitialize = function(){
+  this.prototype._readyOnInitialize = true;
+  return this;
+};
+
+/**
+ * Define a tag to be loaded.
+ *
+ * @api public
+ * @param {string} [name='library'] A nicename for the tag, commonly used in
+ * #load. Helpful when the integration has multiple tags and you need a way to
+ * specify which of the tags you want to load at a given time.
+ * @param {String} str DOM tag as string or URL.
+ * @return {Integration}
+ */
+
+exports.tag = function(name, tag){
+  if (tag == null) {
+    tag = name;
+    name = 'library';
+  }
+  this.prototype.templates[name] = objectify(tag);
+  return this;
+};
+
+/**
+ * Given a string, give back DOM attributes.
+ *
+ * Do it in a way where the browser doesn't load images or iframes. It turns
+ * out domify will load images/iframes because whenever you construct those
+ * DOM elements, the browser immediately loads them.
+ *
+ * @api private
+ * @param {string} str
+ * @return {Object}
+ */
+
+function objectify(str) {
+  // replace `src` with `data-src` to prevent image loading
+  str = str.replace(' src="', ' data-src="');
+
+  var el = domify(str);
+  var attrs = {};
+
+  each(el.attributes, function(attr){
+    // then replace it back
+    var name = attr.name === 'data-src' ? 'src' : attr.name;
+    if (!includes(attr.name + '=', str)) return;
+    attrs[name] = attr.value;
+  });
+
+  return {
+    type: el.tagName.toLowerCase(),
+    attrs: attrs
+  };
+}
+
+}, {"emitter":8,"domify":104,"each":93,"includes":70}],
+109: [function(require, module, exports) {
+
+/**
+ * dependencies.
+ */
+
+var unserialize = require('unserialize');
+var each = require('each');
+var storage;
+
+/**
+ * Safari throws when a user
+ * blocks access to cookies / localstorage.
+ */
+
+try {
+  storage = window.localStorage;
+} catch (e) {
+  storage = null;
+}
+
+/**
+ * Expose `store`
+ */
+
+module.exports = store;
+
+/**
+ * Store the given `key`, `val`.
+ *
+ * @param {String|Object} key
+ * @param {Mixed} value
+ * @return {Mixed}
+ * @api public
+ */
+
+function store(key, value){
+  var length = arguments.length;
+  if (0 == length) return all();
+  if (2 <= length) return set(key, value);
+  if (1 != length) return;
+  if (null == key) return storage.clear();
+  if ('string' == typeof key) return get(key);
+  if ('object' == typeof key) return each(key, set);
+}
+
+/**
+ * supported flag.
+ */
+
+store.supported = !! storage;
+
+/**
+ * Set `key` to `val`.
+ *
+ * @param {String} key
+ * @param {Mixed} val
+ */
+
+function set(key, val){
+  return null == val
+    ? storage.removeItem(key)
+    : storage.setItem(key, JSON.stringify(val));
+}
+
+/**
+ * Get `key`.
+ *
+ * @param {String} key
+ * @return {Mixed}
+ */
+
+function get(key){
+  return unserialize(storage.getItem(key));
+}
+
+/**
+ * Get all.
+ *
+ * @return {Object}
+ */
+
+function all(){
+  var len = storage.length;
+  var ret = {};
+  var key;
+
+  while (0 <= --len) {
+    key = storage.key(len);
+    ret[key] = get(key);
+  }
+
+  return ret;
+}
+
+}, {"unserialize":116,"each":93}],
+116: [function(require, module, exports) {
+
+/**
+ * Unserialize the given "stringified" javascript.
+ * 
+ * @param {String} val
+ * @return {Mixed}
+ */
+
+module.exports = function(val){
+  try {
+    return JSON.parse(val);
+  } catch (e) {
+    return val || undefined;
+  }
+};
+
+}, {}],
+110: [function(require, module, exports) {
+
+/**
+ * Convenience alias
+ */
+
+var define = Object.defineProperty;
+
+
+/**
+ *  The base protocol
+ */
+
+var initialProtocol = window.location.protocol;
+
+/**
+ * Fallback mocked protocol in case Object.defineProperty doesn't exist.
+ */
+
+var mockedProtocol;
+
+
+module.exports = function (protocol) {
+  if (arguments.length === 0) return get();
+  else return set(protocol);
+};
+
+
+/**
+ * Sets the protocol to be http:
+ */
+
+module.exports.http = function () {
+  set('http:');
+};
+
+
+/**
+ * Sets the protocol to be https:
+ */
+
+module.exports.https = function () {
+  set('https:');
+};
+
+
+/**
+ * Reset to the initial protocol.
+ */
+
+module.exports.reset = function () {
+  set(initialProtocol);
+};
+
+
+/**
+ * Gets the current protocol, using the fallback and then the native protocol.
+ *
+ * @return {String} protocol
+ */
+
+function get () {
+  return mockedProtocol || window.location.protocol;
+}
+
+
+/**
+ * Sets the protocol
+ *
+ * @param {String} protocol
+ */
+
+function set (protocol) {
+  try {
+    define(window.location, 'protocol', {
+      get: function () { return protocol; }
+    });
+  } catch (err) {
+    mockedProtocol = protocol;
+  }
+}
+
+}, {}],
+111: [function(require, module, exports) {
+/**
+ * Module dependencies.
+ */
+
+var encode = require('base64-encode');
+var cors = require('has-cors');
+var jsonp = require('jsonp');
+var JSON = require('json');
+
+/**
+ * Expose `send`
+ */
+
+exports = module.exports = cors
+  ? json
+  : base64;
+
+/**
+ * Expose `callback`
+ */
+
+exports.callback = 'callback';
+
+/**
+ * Expose `prefix`
+ */
+
+exports.prefix = 'data';
+
+/**
+ * Expose `json`.
+ */
+
+exports.json = json;
+
+/**
+ * Expose `base64`.
+ */
+
+exports.base64 = base64;
+
+/**
+ * Expose `type`
+ */
+
+exports.type = cors
+  ? 'xhr'
+  : 'jsonp';
+
+/**
+ * Send the given `obj` to `url` with `fn(err, req)`.
+ *
+ * @param {String} url
+ * @param {Object} obj
+ * @param {Object} headers
+ * @param {Function} fn
+ * @api private
+ */
+
+function json(url, obj, headers, fn){
+  if (3 == arguments.length) fn = headers, headers = {};
+
+  var req = new XMLHttpRequest;
+  req.onerror = fn;
+  req.onreadystatechange = done;
+  req.open('POST', url, true);
+  for (var k in headers) req.setRequestHeader(k, headers[k]);
+  req.send(JSON.stringify(obj));
+
+  function done(){
+    if (4 == req.readyState) return fn(null, req);
+  }
+}
+
+/**
+ * Send the given `obj` to `url` with `fn(err, req)`.
+ *
+ * @param {String} url
+ * @param {Object} obj
+ * @param {Function} fn
+ * @api private
+ */
+
+function base64(url, obj, _, fn){
+  if (3 == arguments.length) fn = _;
+  var prefix = exports.prefix;
+  obj = encode(JSON.stringify(obj));
+  obj = encodeURIComponent(obj);
+  url += '?' + prefix + '=' + obj;
+  jsonp(url, { param: exports.callback }, function(err, obj){
+    if (err) return fn(err);
+    fn(null, {
+      url: url,
+      body: obj
+    });
+  });
+}
+
+}, {"base64-encode":117,"has-cors":118,"jsonp":119,"json":59}],
+117: [function(require, module, exports) {
+var utf8Encode = require('utf8-encode');
+var keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+module.exports = encode;
+function encode(input) {
+    var output = "";
+    var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+    var i = 0;
+
+    input = utf8Encode(input);
+
+    while (i < input.length) {
+
+        chr1 = input.charCodeAt(i++);
+        chr2 = input.charCodeAt(i++);
+        chr3 = input.charCodeAt(i++);
+
+        enc1 = chr1 >> 2;
+        enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+        enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+        enc4 = chr3 & 63;
+
+        if (isNaN(chr2)) {
+            enc3 = enc4 = 64;
+        } else if (isNaN(chr3)) {
+            enc4 = 64;
+        }
+
+        output = output +
+            keyStr.charAt(enc1) + keyStr.charAt(enc2) +
+            keyStr.charAt(enc3) + keyStr.charAt(enc4);
+
+    }
+
+    return output;
+}
+}, {"utf8-encode":120}],
+120: [function(require, module, exports) {
+module.exports = encode;
+
+function encode(string) {
+    string = string.replace(/\r\n/g, "\n");
+    var utftext = "";
+
+    for (var n = 0; n < string.length; n++) {
+
+        var c = string.charCodeAt(n);
+
+        if (c < 128) {
+            utftext += String.fromCharCode(c);
+        }
+        else if ((c > 127) && (c < 2048)) {
+            utftext += String.fromCharCode((c >> 6) | 192);
+            utftext += String.fromCharCode((c & 63) | 128);
+        }
+        else {
+            utftext += String.fromCharCode((c >> 12) | 224);
+            utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+            utftext += String.fromCharCode((c & 63) | 128);
+        }
+
+    }
+
+    return utftext;
+}
+}, {}],
+118: [function(require, module, exports) {
+
+/**
+ * Module exports.
+ *
+ * Logic borrowed from Modernizr:
+ *
+ *   - https://github.com/Modernizr/Modernizr/blob/master/feature-detects/cors.js
+ */
+
+try {
+  module.exports = typeof XMLHttpRequest !== 'undefined' &&
+    'withCredentials' in new XMLHttpRequest();
+} catch (err) {
+  // if XMLHttp support is disabled in IE then it will throw
+  // when trying to create
+  module.exports = false;
+}
+
+}, {}],
+119: [function(require, module, exports) {
+/**
+ * Module dependencies
+ */
+
+var debug = require('debug')('jsonp');
+
+/**
+ * Module exports.
+ */
+
+module.exports = jsonp;
+
+/**
+ * Callback index.
+ */
+
+var count = 0;
+
+/**
+ * Noop function.
+ */
+
+function noop(){}
+
+/**
+ * JSONP handler
+ *
+ * Options:
+ *  - param {String} qs parameter (`callback`)
+ *  - timeout {Number} how long after a timeout error is emitted (`60000`)
+ *
+ * @param {String} url
+ * @param {Object|Function} optional options / callback
+ * @param {Function} optional callback
+ */
+
+function jsonp(url, opts, fn){
+  if ('function' == typeof opts) {
+    fn = opts;
+    opts = {};
+  }
+  if (!opts) opts = {};
+
+  var prefix = opts.prefix || '__jp';
+  var param = opts.param || 'callback';
+  var timeout = null != opts.timeout ? opts.timeout : 60000;
+  var enc = encodeURIComponent;
+  var target = document.getElementsByTagName('script')[0] || document.head;
+  var script;
+  var timer;
+
+  // generate a unique id for this request
+  var id = prefix + (count++);
+
+  if (timeout) {
+    timer = setTimeout(function(){
+      cleanup();
+      if (fn) fn(new Error('Timeout'));
+    }, timeout);
+  }
+
+  function cleanup(){
+    script.parentNode.removeChild(script);
+    window[id] = noop;
+  }
+
+  window[id] = function(data){
+    debug('jsonp got', data);
+    if (timer) clearTimeout(timer);
+    cleanup();
+    if (fn) fn(null, data);
+  };
+
+  // add qs component
+  url += (~url.indexOf('?') ? '&' : '?') + param + '=' + enc(id);
+  url = url.replace('?&', '?');
+
+  debug('jsonp req "%s"', url);
+
+  // create script
+  script = document.createElement('script');
+  script.src = url;
+  target.parentNode.insertBefore(script, target);
+}
+
+}, {"debug":15}],
+112: [function(require, module, exports) {
+
+/**
+ * Module dependencies.
+ */
+
+var parse = require('url').parse;
+
+/**
+ * Expose `domain`
+ */
+
+module.exports = domain;
+
+/**
+ * RegExp
+ */
+
+var regexp = /[a-z0-9][a-z0-9\-]*[a-z0-9]\.[a-z\.]{2,6}$/i;
+
+/**
+ * Get the top domain.
+ * 
+ * Official Grammar: http://tools.ietf.org/html/rfc883#page-56
+ * Look for tlds with up to 2-6 characters.
+ * 
+ * Example:
+ * 
+ *      domain('http://localhost:3000/baz');
+ *      // => ''
+ *      domain('http://dev:3000/baz');
+ *      // => ''
+ *      domain('http://127.0.0.1:3000/baz');
+ *      // => ''
+ *      domain('http://segment.io/baz');
+ *      // => 'segment.io'
+ * 
+ * @param {String} url
+ * @return {String}
+ * @api public
+ */
+
+function domain(url){
+  var host = parse(url).hostname;
+  var match = host.match(regexp);
+  return match ? match[0] : '';
+};
+
+}, {"url":64}],
+113: [function(require, module, exports) {
+
+/**
+ * Module dependencies.
+ */
+
+var parse = require('querystring').parse;
+
+/**
+ * Expose `utm`
+ */
+
+module.exports = utm;
+
+/**
+ * Get all utm params from the given `querystring`
+ *
+ * @param {String} query
+ * @return {Object}
+ * @api private
+ */
+
+function utm(query){
+  if ('?' == query.charAt(0)) query = query.substring(1);
+  var query = query.replace(/\?/g, '&');
+  var params = parse(query);
+  var param;
+  var ret = {};
+
+  for (var key in params) {
+    if (~key.indexOf('utm_')) {
+      param = key.substr(4);
+      if ('campaign' == param) param = 'name';
+      ret[param] = params[key];
+    }
+  }
+
+  return ret;
+}
+
+}, {"querystring":27}],
 5: [function(require, module, exports) {
 module.exports = {
   "name": "analytics",
