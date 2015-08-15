@@ -10539,6 +10539,12 @@ module.exports = function (prefix) {
         return _toString.call(obj) === '[object Array]';
     };
 
+    // Ported from underscore.js isObject
+    var _isObject = function(obj) {
+        var type = typeof obj;
+        return type === 'function' || type === 'object' && !!obj;
+    };
+
     function _isArrayLike(arr) {
         return _isArray(arr) || (
             // has a positive integer length property
@@ -10642,7 +10648,6 @@ module.exports = function (prefix) {
             switch (startIndex) {
                 case 0: return func.call(this, rest);
                 case 1: return func.call(this, arguments[0], rest);
-                case 2: return func.call(this, arguments[0], arguments[1], rest);
             }
             // Currently unused but handle cases outside of the switch statement:
             // var args = Array(startIndex + 1);
@@ -10939,6 +10944,7 @@ module.exports = function (prefix) {
     }
     async.detect = _createTester(async.eachOf, identity, _findGetResult);
     async.detectSeries = _createTester(async.eachOfSeries, identity, _findGetResult);
+    async.detectLimit = _createTester(async.eachOfLimit, identity, _findGetResult);
 
     async.sortBy = function (arr, iterator, callback) {
         async.map(arr, function (x, callback) {
@@ -11070,7 +11076,7 @@ module.exports = function (prefix) {
                 acc.times = parseInt(t.times, 10) || DEFAULT_TIMES;
                 acc.interval = parseInt(t.interval, 10) || DEFAULT_INTERVAL;
             } else {
-                throw new Error('Unsupported argument type for \'times\': ' + typeof(t));
+                throw new Error('Unsupported argument type for \'times\': ' + typeof t);
             }
         }
 
@@ -11490,7 +11496,7 @@ module.exports = function (prefix) {
     function _console_fn(name) {
         return _restParam(function (fn, args) {
             fn.apply(null, args.concat([_restParam(function (err, args) {
-                if (typeof console !== 'undefined') {
+                if (typeof console === 'object') {
                     if (err) {
                         if (console.error) {
                             console.error(err);
@@ -11663,10 +11669,10 @@ module.exports = function (prefix) {
                 return callback(e);
             }
             // if result is Promise object
-            if (typeof result !== 'undefined' && typeof result.then === "function") {
+            if (_isObject(result) && typeof result.then === "function") {
                 result.then(function(value) {
                     callback(null, value);
-                }).catch(function(err) {
+                })["catch"](function(err) {
                     callback(err.message ? err : new Error(err));
                 });
             } else {
@@ -11676,11 +11682,11 @@ module.exports = function (prefix) {
     };
 
     // Node.js
-    if (typeof module !== 'undefined' && module.exports) {
+    if (typeof module === 'object' && module.exports) {
         module.exports = async;
     }
     // AMD / RequireJS
-    else if (typeof define !== 'undefined' && define.amd) {
+    else if (typeof define === 'function' && define.amd) {
         define([], function () {
             return async;
         });
