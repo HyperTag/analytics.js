@@ -1,7 +1,7 @@
 {
   "name": "astronomer",
   "author": "Segment.io <friends@segment.io>, Adapted by Astronomer.io",
-  "version": "2.11.0+ASTRONOMER",
+  "version": "2.11.1",
   "license": "MIT",
   "description": "The hassle-free way to integrate analytics into any web application.",
   "keywords": [
