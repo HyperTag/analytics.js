@@ -42,7 +42,8 @@ describe('analytics.js', function () {
     'pinterest-conversions',
     'resonate',
     'pebble-post',
-    'hotjar'
+    'hotjar',
+    'drift'
   ];
 
   it('should have all the expected integrations', function () {
