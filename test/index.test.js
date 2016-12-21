@@ -43,8 +43,7 @@ describe('analytics.js', function () {
     'resonate',
     'pebble-post',
     'hotjar',
-    'drift',
-    'outbrain'
+    'drift'
   ];
 
   it('should have all the expected integrations', function () {
