@@ -25,16 +25,6 @@ Include the Javascript snippet (shown below) into your app between your `<head>`
 </script>
 ```
 
-Initialize it with your appId. If you haven't made an account yet, [sign up](https://app.astronomer.io/signup) and create a new app by clicking the + icon at the top right of your dashboard. Once the new app is created, the appId will be located within the settings tab.
-
-```javascript
-analytics.initialize({  
-  "astronomer": {
-    "appId": "YOURAPPID"
-  }
-});
-```
-
 ##Identify
 
 ```javascript
