@@ -44,7 +44,8 @@ describe('analytics.js', function () {
     'pebble-post',
     'hotjar',
     'drift',
-    'outbrain'
+    'outbrain',
+    'netmining'
   ];
 
   it('should have all the expected integrations', function () {
