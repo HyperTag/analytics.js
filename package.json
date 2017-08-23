@@ -49,7 +49,7 @@
     "@astronomerio/analytics.js-integration-lytics": "github:astronomer-integrations/analytics.js-integration-lytics#2.0.0",
     "@astronomerio/analytics.js-integration-marin": "github:astronomerio/analytics.js-integration-marin#1.0.0",
     "@astronomerio/analytics.js-integration-mixpanel": "github:astronomer-integrations/analytics.js-integration-mixpanel#2.2.0",
-    "@astronomerio/analytics.js-integration-netmining": "github:astronomer-integrations/analytics.js-integration-netmining#1.0.0",
+    "@astronomerio/analytics.js-integration-netmining": "github:astronomer-integrations/analytics.js-integration-netmining#1.0.1",
     "@astronomerio/analytics.js-integration-optimizely": "github:astronomer-integrations/analytics.js-integration-optimizely#3.1.0",
     "@astronomerio/analytics.js-integration-outbrain": "github:astronomer-integrations/analytics.js-integration-outbrain#1.0.0",
     "@astronomerio/analytics.js-integration-pebble-post": "github:astronomer-integrations/analytics.js-integration-pebble-post#1.0.0",
