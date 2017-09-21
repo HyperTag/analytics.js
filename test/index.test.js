@@ -14,6 +14,7 @@ describe('analytics.js', function () {
     'bloom-reach',
     'criteo',
     'doubleclick-floodlight',
+    'doubleclick',
     'retention-science',
     'rubicon',
     'marin',
