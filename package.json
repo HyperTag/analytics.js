@@ -34,7 +34,7 @@
     "@astronomerio/analytics.js-integration-customerio": "github:astronomer-integrations/analytics.js-integration-customerio#2.0.0",
     "@astronomerio/analytics.js-integration-doubleclick-floodlight": "github:astronomer-integrations/analytics.js-integration-doubleclick-floodlight#1.4.1",
     "@astronomerio/analytics.js-integration-drift": "github:astronomer-integrations/analytics.js-integration-drift#2.0.1",
-    "@astronomerio/analytics.js-integration-facebook-pixel": "github:astronomer-integrations/analytics.js-integration-facebook-pixel#2.2.1",
+    "@astronomerio/analytics.js-integration-facebook-pixel": "github:astronomer-integrations/analytics.js-integration-facebook-pixel#2.2.2",
     "@astronomerio/analytics.js-integration-google-analytics": "github:astronomer-integrations/analytics.js-integration-google-analytics#2.12.0",
     "@astronomerio/analytics.js-integration-google-tag-manager": "github:astronomer-integrations/analytics.js-integration-google-tag-manager#2.2.0",
     "@astronomerio/analytics.js-integration-heap": "github:astronomer-integrations/analytics.js-integration-heap#2.0.2",
