@@ -60,7 +60,7 @@
     "@astronomerio/analytics.js-integration-taboola": "github:astronomerio/analytics.js-integration-taboola#1.0.1",
     "@astronomerio/analytics.js-integration-twitter-ads": "github:astronomer-integrations/analytics.js-integration-twitter-ads#2.2.0",
     "@astronomerio/analytics.js-integration-vero": "github:astronomer-integrations/analytics.js-integration-vero#2.0.0",
-    "@astronomerio/analytics.js-integration-visual-website-optimizer": "github:astronomer-integrations/analytics.js-integration-visual-website-optimizer#2.2.1",
+    "@astronomerio/analytics.js-integration-visual-website-optimizer": "github:astronomer-integrations/analytics.js-integration-visual-website-optimizer#2.2.2",
     "@astronomerio/analytics.js-integration-woopra": "github:astronomer-integrations/analytics.js-integration-woopra#2.0.1"
   },
   "devDependencies": {
