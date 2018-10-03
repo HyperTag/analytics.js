@@ -31,7 +31,7 @@
     "@astronomerio/analytics.js-integration-bloomreach": "github:astronomerio/analytics.js-integration-bloomreach#1.0.1",
     "@astronomerio/analytics.js-integration-clicky": "github:astronomer-integrations/analytics.js-integration-clicky#2.0.0",
     "@astronomerio/analytics.js-integration-criteo": "github:astronomerio/analytics.js-integration-criteo#1.0.10",
-    "@astronomerio/analytics.js-integration-customerio": "github:astronomer-integrations/analytics.js-integration-customerio#2.1.0",
+    "@astronomerio/analytics.js-integration-customerio": "github:astronomer-integrations/analytics.js-integration-customerio#2.0.0",
     "@astronomerio/analytics.js-integration-doubleclick-floodlight": "github:astronomer-integrations/analytics.js-integration-doubleclick-floodlight#1.4.1",
     "@astronomerio/analytics.js-integration-drift": "github:astronomer-integrations/analytics.js-integration-drift#2.0.1",
     "@astronomerio/analytics.js-integration-facebook-pixel": "github:astronomer-integrations/analytics.js-integration-facebook-pixel#2.2.2",
