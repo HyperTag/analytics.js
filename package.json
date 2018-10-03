@@ -1,7 +1,7 @@
 {
   "name": "@astronomerio/analytics.js",
   "author": "Astronomer, <info@astronomer.io>",
-  "version": "3.2.3",
+  "version": "3.2.12",
   "license": "SEE LICENSE IN LICENSE",
   "description": "The hassle-free way to integrate analytics into any web application.",
   "keywords": [
@@ -31,7 +31,7 @@
     "@astronomerio/analytics.js-integration-bloomreach": "github:astronomerio/analytics.js-integration-bloomreach#1.0.1",
     "@astronomerio/analytics.js-integration-clicky": "github:astronomer-integrations/analytics.js-integration-clicky#2.0.0",
     "@astronomerio/analytics.js-integration-criteo": "github:astronomerio/analytics.js-integration-criteo#1.0.10",
-    "@astronomerio/analytics.js-integration-customerio": "github:astronomer-integrations/analytics.js-integration-customerio#2.0.0",
+    "@astronomerio/analytics.js-integration-customerio": "github:astronomer-integrations/analytics.js-integration-customerio#2.1.0",
     "@astronomerio/analytics.js-integration-doubleclick-floodlight": "github:astronomer-integrations/analytics.js-integration-doubleclick-floodlight#1.4.1",
     "@astronomerio/analytics.js-integration-drift": "github:astronomer-integrations/analytics.js-integration-drift#2.0.1",
     "@astronomerio/analytics.js-integration-facebook-pixel": "github:astronomer-integrations/analytics.js-integration-facebook-pixel#2.2.2",
@@ -41,7 +41,7 @@
     "@astronomerio/analytics.js-integration-hotjar": "github:astronomerio/analytics.js-integration-hotjar#1.0.0",
     "@astronomerio/analytics.js-integration-hubspot": "github:astronomer-integrations/analytics.js-integration-hubspot#2.1.3",
     "@astronomerio/analytics.js-integration-intercom": "github:astronomer-integrations/analytics.js-integration-intercom#2.1.1",
-    "@astronomerio/analytics.js-integration-keen-io": "github:astronomer-integrations/analytics.js-integration-keen-io#2.1.0",
+    "@astronomerio/analytics.js-integration-keen-io": "github:astronomer-integrations/analytics.js-integration-keen-io#2.1.2",
     "@astronomerio/analytics.js-integration-kenshoo": "github:astronomer-integrations/analytics.js-integration-kenshoo#2.0.0",
     "@astronomerio/analytics.js-integration-kenshoo-infinity": "github:astronomerio/analytics.js-integration-kenshoo-infinity#1.0.7",
     "@astronomerio/analytics.js-integration-kissmetrics": "github:astronomer-integrations/analytics.js-integration-kissmetrics#2.1.1",
