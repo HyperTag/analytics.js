@@ -7,46 +7,7 @@ var analytics = require('../lib');
 
 describe('analytics.js', function () {
   var expectedIntegrations = [
-    'astronomer',
-    'taboola',
-    'kenshoo-infinity-pixel',
-    'acquisio',
-    'bloom-reach',
-    'criteo',
-    'doubleclick-floodlight',
-    'doubleclick',
-    'retention-science',
-    'rubicon',
-    'marin',
-    'adwords',
-    'amplitude',
-    'bing-ads',
-    'clicky',
-    'customerio',
-    'facebook-pixel',
-    'google-analytics',
-    'google-tag-manager',
-    'hubspot',
-    'intercom',
-    'keen-io',
-    'kenshoo',
-    'kissmetrics',
-    'klaviyo',
-    'lytics',
-    'mixpanel',
-    'optimizely',
-    'twitter-ads',
-    'vero',
-    'visual-website-optimizer',
-    'woopra',
-    'heap',
-    'pinterest-conversions',
-    'resonate',
-    'pebble-post',
-    'hotjar',
-    'drift',
-    'outbrain',
-    'netmining'
+    'astronomer'
   ];
 
   it('should have all the expected integrations', function () {
