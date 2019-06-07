@@ -1,7 +1,7 @@
 {
   "name": "@astronomerio/analytics.js",
   "author": "Astronomer, <info@astronomer.io>",
-  "version": "3.2.19",
+  "version": "3.2.20",
   "license": "SEE LICENSE IN LICENSE",
   "description": "The hassle-free way to integrate analytics into any web application.",
   "keywords": [
@@ -47,6 +47,7 @@
     "@astronomerio/analytics.js-integration-kenshoo-infinity": "github:astronomerio/analytics.js-integration-kenshoo-infinity#1.0.7",
     "@astronomerio/analytics.js-integration-kissmetrics": "github:astronomer-integrations/analytics.js-integration-kissmetrics#2.1.1",
     "@astronomerio/analytics.js-integration-klaviyo": "github:astronomer-integrations/analytics.js-integration-klaviyo#2.1.1",
+    "@astronomerio/analytics.js-integration-lucky-orange": "github:astronomer-integrations/analytics.js-integration-lucky-orange#2.1.0",
     "@astronomerio/analytics.js-integration-lytics": "github:astronomer-integrations/analytics.js-integration-lytics#2.0.0",
     "@astronomerio/analytics.js-integration-marin": "github:astronomerio/analytics.js-integration-marin#1.0.0",
     "@astronomerio/analytics.js-integration-mixpanel": "github:astronomer-integrations/analytics.js-integration-mixpanel#3.0.1",
