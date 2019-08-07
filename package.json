@@ -1,7 +1,7 @@
 {
   "name": "@astronomerio/analytics.js",
   "author": "Astronomer, <info@astronomer.io>",
-  "version": "3.2.21",
+  "version": "3.2.22",
   "license": "SEE LICENSE IN LICENSE",
   "description": "The hassle-free way to integrate analytics into any web application.",
   "keywords": [
@@ -26,7 +26,7 @@
     "@astronomerio/analytics.js-integration-acquisio": "github:astronomerio/analytics.js-integration-acquisio#1.0.10",
     "@astronomerio/analytics.js-integration-adobe-analytics": "github:astronomer-integrations/analytics.js-integration-adobe-analytics#2.4.4",
     "@astronomerio/analytics.js-integration-adwords": "github:astronomer-integrations/analytics.js-integration-adwords#2.5.2",
-    "@astronomerio/analytics.js-integration-amplitude": "github:astronomer-integrations/analytics.js-integration-amplitude#2.8.0",
+    "@astronomerio/analytics.js-integration-amplitude": "github:astronomer-integrations/analytics.js-integration-amplitude#3.0.3",
     "@astronomerio/analytics.js-integration-astronomer": "github:astronomerio/analytics.js-integration-astronomer#3.0.2",
     "@astronomerio/analytics.js-integration-bing-ads": "github:astronomer-integrations/analytics.js-integration-bing-ads#2.0.0",
     "@astronomerio/analytics.js-integration-bloomreach": "github:astronomerio/analytics.js-integration-bloomreach#1.0.1",
