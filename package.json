@@ -41,7 +41,7 @@
     "@astronomerio/analytics.js-integration-heap": "github:astronomer-integrations/analytics.js-integration-heap#2.0.2",
     "@astronomerio/analytics.js-integration-hotjar": "github:astronomerio/analytics.js-integration-hotjar#1.0.0",
     "@astronomerio/analytics.js-integration-hubspot": "github:astronomer-integrations/analytics.js-integration-hubspot#2.1.3",
-    "@astronomerio/analytics.js-integration-intercom": "github:astronomer-integrations/analytics.js-integration-intercom#3.0.0",
+    "@astronomerio/analytics.js-integration-intercom": "github:astronomer-integrations/analytics.js-integration-intercom#2.1.1",
     "@astronomerio/analytics.js-integration-keen-io": "github:astronomer-integrations/analytics.js-integration-keen-io#2.1.2",
     "@astronomerio/analytics.js-integration-kenshoo": "github:astronomer-integrations/analytics.js-integration-kenshoo#2.0.0",
     "@astronomerio/analytics.js-integration-kenshoo-infinity": "github:astronomerio/analytics.js-integration-kenshoo-infinity#1.0.7",
